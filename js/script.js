@@ -1,31 +1,31 @@
 const LetterImagesPaths =[
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_A.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_B.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_C.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_D.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_E.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_F.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_G.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_H.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_I.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_J.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_K.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_L.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_M.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_N.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_O.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_P.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_Q.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_R.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_S.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_T.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_U.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_V.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_W.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_X.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_Y.jpg',
-    'graphics_data/Scrabble_Tiles/Scrabble_Tile_Z.jpg'
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_A.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_B.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_C.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_D.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_E.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_F.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_G.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_H.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_I.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_J.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_K.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_L.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_M.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_N.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_O.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_P.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_Q.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_R.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_S.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_T.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_U.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_V.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_W.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_X.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_Y.jpg',
+    '..graphics_data/Scrabble_Tiles/Scrabble_Tile_Z.jpg'
 ];
 
 var imageDistribution;
@@ -51,9 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 array[i].amount -= 1;
                 CurrentRack += array[i].letter;
                 if (array[i].letter == '_'){
-                    return 'graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg';
+                    return '..graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg';
                 }
-                return 'graphics_data/Scrabble_Tiles/Scrabble_Tile_'+ array[i].letter + '.jpg'; // Use the letter as the image path for this example
+                return '..graphics_data/Scrabble_Tiles/Scrabble_Tile_'+ array[i].letter + '.jpg'; // Use the letter as the image path for this example
             }
             randomNum -= array[i].amount;
         }
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Display random images in existing divs
     async function displayRandomImages() {
-        const filePath = 'graphics_data/pieces.json';
+        const filePath = '..graphics_data/pieces.json';
         imageDistribution = await fetchJSONData(filePath);
         
         var imageDivs = document.querySelectorAll('.source');
@@ -85,9 +85,9 @@ function getRandomImagePath(array) {
                 array[i].amount -= 1;
                 CurrentRack += array[i].letter;
                 if (array[i].letter == '_'){
-                    return 'graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg';
+                    return '..graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg';
                 }
-                return 'graphics_data/Scrabble_Tiles/Scrabble_Tile_'+ array[i].letter + '.jpg'; // Use the letter as the image path for this example
+                return '..graphics_data/Scrabble_Tiles/Scrabble_Tile_'+ array[i].letter + '.jpg'; // Use the letter as the image path for this example
             }
             randomNum -= array[i].amount;
         }
