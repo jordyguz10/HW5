@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Scrabble Game!</h1>
+    <!-- Source elements -->
+    <div class="rack">
+        <img src="/graphics_data/scrabble-tile-holder-406774_640.png">
+    </div>
+    <div class="source" id="Letter1">
+    </div>
+    <div class="source" id="Letter2">
+    </div>
+    <div class="source" id="Letter3">
+    </div>
+    <div class="source" id="Letter4">
+    </div>
+    <div class="source" id="Letter5">
+    </div>
+    <div class="source" id="Letter6">
+    </div>
+    <div class="source" id="Letter7">
+    </div>
+
+    <div class="buttons">
+        <button id="NextWord" onclick="NextWord()">Next Word</button>
+        <button id="StartOver" onclick="startOver()">Start Over</button>
+    </div>
+
+    <div>
+        <h3 id="CurrentScore">Score: 0</h3>
+    </div>
+
+    <!-- Target elements -->
+    <div class="ScrabbleLine">
+        <img src="graphics_data/Scrabble_Board_OneLine.png" alt="png image">
+    </div>
+    <div class="target" id="target1">
+        Drop here (Target 1)
+    </div>
+    <div class="target" id="target2">
+        Drop here (Target 2)
+    </div>
+    <div class="target" id="target3">
+        Drop here (Target 3)
+    </div>
+    <div class="target" id="target4">
+        Drop here (Target 4)
+    </div>
+    <div class="target" id="target5">
+        Drop here (Target 5)
+    </div>
+    <div class="target" id="target6">
+        Drop here (Target 6)
+    </div>
+    <div class="target" id="target7">
+        Drop here (Target 7)
+    </div>
+    <div class="target" id="target8">
+        Drop here (Target 8)
+    </div>
+    <div class="target" id="target9">
+        Drop here (Target 9)
+    </div>
+    <div class="target" id="target10">
+        Drop here (Target 10)
+    </div>
+    <div class="target" id="target11">
+        Drop here (Target 11)
+    </div>
+    <div class="target" id="target12">
+        Drop here (Target 12)
+    </div>
+    <div class="target" id="target13">
+        Drop here (Target 13)
+    </div>
+    <div class="target" id="target14">
+        Drop here (Target 14)
+    </div>
+    <div class="target" id="target15">
+        Drop here (Target 15)
+    </div>
+</body>
+</html>
